@@ -34,13 +34,13 @@ export default function TokenOverview() {
           background: "#fafafa",
         }}
       >
-        <p>💰 Giá: {data.price ? formatNumber(data.price, 8) : "Chưa có dữ liệu"} USD</p>
-        <p>📊 Vốn hóa thị trường: {formatNumber(data.marketCap, 0)} USD</p>
-        <p>💎 Giá gốc (FDV): {formatNumber(data.fdv, 0)} USD</p>
-        <p>💧 Thanh khoản: {formatNumber(data.totalLiquidity, 0)} USD</p>
-        <p>👥 Người sở hữu: {data.holders}</p>
-        <p>📈 Thay đổi 24h: {data.priceChange24H} %</p>
-        <p>📦 Cung lưu hành: {formatNumber(data.circulatingSupply, 0)}</p>
+        <p>💰 price: {data.price ? formatNumber(data.price, 8) : "Chưa có dữ liệu"} USD</p>
+        <p>📊 marketcap: {formatNumber(data.marketCap, 0)} USD</p>
+        <p>💎 fdv (FDV): {formatNumber(data.fdv, 0)} USD</p>
+        <p>💧 liquidity: {formatNumber(data.totalLiquidity, 0)} USD</p>
+        <p>👥 holders: {data.holders}</p>
+        <p>📈 priceChange24h: {data.priceChange24H} %</p>
+        <p>📦 circulatingSupply: {formatNumber(data.circulatingSupply, 0)}</p>
       </div>
     </div>
   );
